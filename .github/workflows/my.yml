@@ -26,12 +26,9 @@ jobs:
       run: actions/setup-node@v2-beta
       with:
         node=version: 12
-  
-
     # Runs a set of commands using the runners shell
     - name: Install surge
       run: npm install --global surge
     - name: Deploying
       run: surge ./ arshad-siddiqui.surge.sh --token $ {{secrets.my_token}}
-        echo Add other actions to build,
-        echo test, and deploy your project.
+       
